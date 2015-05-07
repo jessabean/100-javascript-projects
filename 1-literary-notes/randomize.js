@@ -38,6 +38,16 @@ var data={ "notes": [
     "title": "Verdigris Deep",
     "author": "Frances Hardinge",
     "quote": "The letters were bitter and funny and there were holes of unsaid where you could feel the demons breathing."
+  },
+  {
+    "title": "Coraline",
+    "author": "Neil Gaiman",
+    "quote": "There was a cold, musty smell coming through the open doorway; it smelled like something very old and very slow."
+  },
+  {
+    "title": "The Getting of Wisdom",
+    "author": "Harry Handel Richardson",
+    "quote": "&ldquo;I say, M.P., if everybody told stories, and everybody knew everybody else was telling them, then truth woudln't be any good at all, would it? If nobody used it?&rdquo;"
   }
  ]
 };
