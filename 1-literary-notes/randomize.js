@@ -57,13 +57,9 @@ function randomize() {
   var random_index = Math.floor(Math.random() * range);
   var item = data.notes[random_index];
   
-  var content = item.quote; 
-  var book = item.title;
-  var author = item.author;
-
-  $('.quote-content').html(content); 
-  $('.quote-book').html(book);
-  $('.quote-author').html(author);
+  $('.quote-content').html(item.quote); 
+  $('.quote-book').html(item.title);
+  $('.quote-author').html(item.author);
 }
 
 $(document).ready(randomize);
