@@ -32,7 +32,7 @@ var data={ "notes": [
   {
     "title": "The Lathe of Heaven",
     "author": "Ursula K. Le Guin",
-    "quote": "&ldquo;The aim of psychotherapy is precisely this, to remove those groundless fears and nightmares, to bring up what&rsquo;s unconscious into the light of rational consciousness, examine it objectively, and find that there is nothing to fear.&rdquo; &ldquo;But there is,&rdquo; Orr said very softly."
+    "quote": "<p>&ldquo;The aim of psychotherapy is precisely this, to remove those groundless fears and nightmares, to bring up what&rsquo;s unconscious into the light of rational consciousness, examine it objectively, and find that there is nothing to fear.&rdquo;</p> <p>&ldquo;But there is,&rdquo; Orr said very softly.</p>"
   },
   {
     "title": "Verdigris Deep",
