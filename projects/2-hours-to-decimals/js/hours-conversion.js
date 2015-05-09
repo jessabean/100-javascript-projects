@@ -7,6 +7,10 @@ function convertMinutes() {
     var hours             = $hoursInput.val();
     var minutes           = $minutesInput.val();
 
+    if( hours == "" ) {
+      hours = "0";
+    }
+
     var minutesInDecimal  = (minutes / 60).toFixed(2)
     
     var convertedHours    = parseFloat(hours);
