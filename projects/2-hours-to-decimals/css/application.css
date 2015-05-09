@@ -1,0 +1,57 @@
+.page-header,
+.page-content,
+.page-footer {
+  margin: 0 auto;
+  width: 600px;
+}
+
+.page-content,
+.page-footer {
+  text-align: center;
+}
+
+.page-content {
+  margin-bottom: 100px;
+  margin-top: 100px;
+}
+
+.time-conversion-form {
+  width: 330px;
+}
+
+input[type=number] {
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #d8d8d8;
+  font-size: 36px;
+  padding: 10px 0;
+  width: 140px;
+  -webkit-appearance: none;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+input[type=number]:focus {
+  border-bottom: 2px solid #B2316D;
+  outline: none;
+}
+
+.input-wrapper {
+  display: inline-block;
+}
+
+.hours-input-wrapper:after {
+  content: ":";
+  font-size: 36px;
+  font-weight: bold;
+  margin: 0 10px;
+}
+
+.button-submit {
+  display: block;
+  margin: 30px auto 0 auto;
+}

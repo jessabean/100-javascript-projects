@@ -28,9 +28,13 @@
   </header>
 
   <div id="main" role="main" class="page-content">
-    <form class="js-time-conversion-form">
-      <input type="text" class="hours-input js-hours-input" id="hours-input" />
-      <input type="text" class="minutes-input js-minutes-input" id="minutes-input" />
+    <form class="time-convesion-form js-time-conversion-form">
+      <div class="input-wrapper hours-input-wrapper">
+        <input type="number" class="hours-input js-hours-input" id="hours-input" />
+      </div>
+      <div class="input-wrapper minutes-input-wrapper">
+        <input type="number" class="minutes-input js-minutes-input" id="minutes-input" />
+      </div>
       <button type="submit" class="button button-submit">Convert</button>
     </form>
   </div>
