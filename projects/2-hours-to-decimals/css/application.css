@@ -26,8 +26,7 @@ body {
 }
 
 .time-conversion-form {
-  display: flex;
-  width: 640px;
+  text-align: center;
 }
 
 input[type=number] {
@@ -35,7 +34,9 @@ input[type=number] {
   border: none;
   border-bottom: 2px solid #d8d8d8;
   font-size: 36px;
-  width: 165px;
+  text-align: center;
+  width: 140px;
+  -moz-appearance:textfield;
   -webkit-appearance: none;
 }
 
@@ -50,9 +51,12 @@ input[type=number]:focus {
   outline: none;
 }
 
+[placeholder]:focus::-webkit-input-placeholder {
+  opacity: 0;
+}
+
 .input-wrapper {
-  flex: 1;
-  margin: auto;
+  display: inline-block;
 }
 
 .hours-input-wrapper:after {
