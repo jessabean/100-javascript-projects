@@ -22,10 +22,10 @@ function convertMinutes() {
 };
 
 function calculateMinutes() {
-  $hoursInput.on('change', function() {
+  $hoursInput.on('blur', function() {
     convertMinutes();
   });
-  $minutesInput.on('change', function() {
+  $minutesInput.on('blur', function() {
     convertMinutes();
   })
 };
