@@ -30,8 +30,18 @@ function calculateMinutes() {
   })
 };
 
+function limitMinutesLength() {
+  $minutesInput.keyup(function() {
+    var maxChars = 2;
+    if ($(this).val().length > maxChars) {
+        $(this).val($(this).val().substr(0, maxChars));
+    }
+  });
+}
+
 $(document).ready(function() {
   convertMinutes();
   calculateMinutes();
+  limitMinutesLength();
 });
   
