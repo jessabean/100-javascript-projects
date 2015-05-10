@@ -12,12 +12,8 @@ body {
 .page-content,
 .page-footer {
   margin: 0 auto;
-  width: 600px;
-}
-
-.page-content,
-.page-footer {
   text-align: center;
+  width: 600px;
 }
 
 .page-content {
