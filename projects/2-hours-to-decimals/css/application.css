@@ -83,3 +83,9 @@ input[type=number]:focus {
   margin-top: 30px;
   text-align: center;
 }
+
+.errors {
+  color: #FA2A00;
+  font-weight: bold;
+  margin-bottom: 20px;
+}

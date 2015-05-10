@@ -2,6 +2,7 @@ var $form           = $('.js-time-conversion-form');
 var $hoursInput     = $('.js-hours-input');
 var $minutesInput   = $('.js-minutes-input');
 var $decimalOutput  = $('.js-converted-hours');
+var $errorsOutput   = $('.js-errors');
 
 
 function convertMinutes() {
@@ -37,11 +38,23 @@ function limitMinutesLength() {
         $(this).val($(this).val().substr(0, maxChars));
     }
   });
+};
+
+function limitMinutesNumber() {
+  $minutesInput.keyup(function() {
+    var maxMinutes = 59;
+    if( $(this).val() > 59 || $(this).val() < 0) {
+      $errorsOutput.html("Minutes must be between 0 and 59");
+    } else {
+      $errorsOutput.html("");
+    }
+  })
 }
 
 $(document).ready(function() {
   convertMinutes();
   calculateMinutes();
   limitMinutesLength();
+  limitMinutesNumber();
 });
   
