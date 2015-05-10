@@ -2,6 +2,7 @@ function convertMinutes() {
   var $form           = $('.js-time-conversion-form');
   var $hoursInput     = $('.js-hours-input');
   var $minutesInput   = $('.js-minutes-input');
+  var $decimalOutput  = $('.js-converted-hours');
 
   $form.submit(function( event ) {
     var hours             = $hoursInput.val();
@@ -17,7 +18,7 @@ function convertMinutes() {
     var convertedMinutes  = parseFloat(minutesInDecimal);
     var total             = convertedHours += convertedMinutes;
 
-    alert(total);
+    $decimalOutput.html(total + " hours");
 
     event.preventDefault();
   });
