@@ -43,7 +43,11 @@ function limitMinutesNumber() {
 $(document).ready(function() {
   $hoursInput.on('blur', convertMinutes);
   $minutesInput.on('blur', convertMinutes);
-  $minutesInput.on('keyup', limitMinutesLength);
-  $minutesInput.on('keyup', limitMinutesNumber);
+
+  $minutesInput.on('keyup', function() {
+    limitMinutesLength();
+    limitMinutesNumber();
+  });
+
 });
   
