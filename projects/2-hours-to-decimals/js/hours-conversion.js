@@ -22,15 +22,6 @@ function convertMinutes() {
   $decimalOutput.html(total + " hours");
 };
 
-function calculateMinutes() {
-  $hoursInput.on('blur', function() {
-    convertMinutes();
-  });
-  $minutesInput.on('blur', function() {
-    convertMinutes();
-  })
-};
-
 function limitMinutesLength() {
   $minutesInput.keyup(function() {
     var maxChars = 2;
@@ -47,14 +38,15 @@ function limitMinutesNumber() {
       $errorsOutput.html("Minutes must be between 0 and 59");
     } else {
       $errorsOutput.html("");
-    }
-  })
+    };
+  });
 }
 
 $(document).ready(function() {
-  convertMinutes();
-  calculateMinutes();
   limitMinutesLength();
   limitMinutesNumber();
+
+  $hoursInput.on('blur', convertMinutes);
+  $minutesInput.on('blur', convertMinutes);
 });
   
