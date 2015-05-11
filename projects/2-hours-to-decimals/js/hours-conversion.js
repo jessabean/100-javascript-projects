@@ -23,30 +23,27 @@ function convertMinutes() {
 };
 
 function limitMinutesLength() {
-  $minutesInput.keyup(function() {
-    var maxChars = 2;
-    if ($(this).val().length > maxChars) {
-        $(this).val($(this).val().substr(0, maxChars));
-    }
-  });
+  var maxChars = 2;
+
+  if ($minutesInput.val().length > maxChars) {
+      $minutesInput.val($minutesInput.val().substr(0, maxChars));
+  };
 };
 
 function limitMinutesNumber() {
-  $minutesInput.keyup(function() {
-    var maxMinutes = 59;
-    if( $(this).val() > 59 || $(this).val() < 0) {
-      $errorsOutput.html("Minutes must be between 0 and 59");
-    } else {
-      $errorsOutput.html("");
-    };
-  });
+  var maxMinutes = 59;
+
+  if( $minutesInput.val() > 59 || $minutesInput.val() < 0) {
+    $errorsOutput.html("Minutes must be between 0 and 59");
+  } else {
+    $errorsOutput.html("");
+  };
 }
 
 $(document).ready(function() {
-  limitMinutesLength();
-  limitMinutesNumber();
-
   $hoursInput.on('blur', convertMinutes);
   $minutesInput.on('blur', convertMinutes);
+  $minutesInput.on('keyup', limitMinutesLength);
+  $minutesInput.on('keyup', limitMinutesNumber);
 });
   
