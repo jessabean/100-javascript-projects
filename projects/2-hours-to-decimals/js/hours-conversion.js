@@ -30,7 +30,7 @@ function limitMinutesLength() {
   };
 };
 
-function limitMinutesNumber() {
+function limitMinutesRange() {
   var maxMinutes = 59;
 
   if( $minutesInput.val() > 59 || $minutesInput.val() < 0) {
@@ -46,7 +46,7 @@ $(document).ready(function() {
 
   $minutesInput.on('keyup', function() {
     limitMinutesLength();
-    limitMinutesNumber();
+    limitMinutesRange();
   });
 
 });
