@@ -23,6 +23,30 @@ function convertToHex(value) {
 
   // stringify
   return hex1.toString() + hex2.toString();
+};
+
+function validateRGB(value) {
+  // RGB value must be a number
+  // RGB value must be a number between 0 and 255
+};
+
+function hexToRGB(hex) {
+  // Red    - hex.substr(0, 2)
+  // Green  - hex.substr(2, 4)
+  // Blue   - hex.substr(4, 6)
+
+  // for each color:
+  // x = color.substring(0,1)
+  // y = color.substring(1,2)
+
+  // var index = [0,1,2,3,4,5,6,7,8,9,"A","B","C","D","E","F"];
+  // find index of x & y values, e.g.: inArray(x, index)
+  // RGB number = (x * 16) + y
+};
+
+function validateHex(value) {
+  // Hex value must be 6 characters
+  // Hex value must only contain characters contained in the array
 }
 
 $ ( document ).ready(function() {
