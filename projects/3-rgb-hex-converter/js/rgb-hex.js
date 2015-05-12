@@ -4,7 +4,7 @@ function rgbToHex(R,G,B) {
   $('.js-hex-output').html(
     // need to perform the hex conversion on each primary color
     // then add them all together
-    convertToHex(R) + convertToHex(G) + convertToHex(B);
+    convertToHex(R) + convertToHex(G) + convertToHex(B)
   );
 };
 
