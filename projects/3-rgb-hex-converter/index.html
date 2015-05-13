@@ -29,13 +29,18 @@
     <div class="errors js-errors"></div>
     <form class="hex-rgb-form js-hex-rgb-form">
       <div class="field-group">
-        <label class="rgb-input">RGB</label>
-        <input type="text" class="rgb-input js-rgb-input js-red-input" />
-        <input type="text" class="rgb-input js-rgb-input js-green-input" />
-        <input type="text" class="rgb-input js-rgb-input js-blue-input" />
+        <label>Hex</label>
+        <input type="text" class="js-hex-input" />
+        <button type="submit" class="button button-submit js-hex-to-rgb">Convert to RGB</button>
       </div>
       <div class="field-group">
-        <button type="submit" class="button button-submit">Convert to Hex</button>
+        <label>RGB</label>
+        <input type="text" class="js-rgb-input js-red-input" />
+        <input type="text" class="js-rgb-input js-green-input" />
+        <input type="text" class="js-rgb-input js-blue-input" />
+      </div>
+      <div class="field-group">
+        <button type="submit" class="button button-submit js-rgb-to-hex">Convert to Hex</button>
       </div>
     </form>
     <div class="js-hex-output"></div>

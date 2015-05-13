@@ -31,18 +31,58 @@ function validateRGB(value) {
 };
 
 function hexToRGB(hex) {
-  // Red    - hex.substr(0, 2)
-  // Green  - hex.substr(2, 4)
-  // Blue   - hex.substr(4, 6)
+  event.preventDefault();
 
-  // for each color:
-  // x = color.substring(0,1)
-  // y = color.substring(1,2)
+  // set up the decoder ring
+  var index = [0,1,2,3,4,5,6,7,8,9,"A","B","C","D","E","F"];
 
-  // var index = [0,1,2,3,4,5,6,7,8,9,"A","B","C","D","E","F"];
-  // find index of x & y values, e.g.: inArray(x, index)
-  // RGB number = (x * 16) + y
+  // put each character of the hex argument into the array
+  var hexArray = (hex).toString().split("");
+
+  // set up container for decoded values
+  var rgb = [];
+
+  // decode the characters in hex array and add to rgb container
+  for ( var i=0; i < hexArray.length; i++) {
+    var character = hexArray[i].toUpperCase();
+    var code = jQuery.inArray(character, index);
+    rgb.push(code);
+  }
+
+  // okay let's actually do the math now
+  convertToHex(rgb);
 };
+
+function convertToHex(array) {
+
+  // split out every 2 characters in the array
+  var R = array.splice(0, 2);
+  var G = array.splice(0, 2);
+  var B = array.splice(0, 2);
+
+  // array of arrays so we can loop through it
+  var rgbArray = [R, G, B];
+
+  // set up container for final rgb output
+  var rgbOutput = []
+
+  // grab each x/y value from the rgb array
+  for(var i = 0; i < rgbArray.length; i++){
+ 
+    var x = rgbArray[i][0];
+    var y = rgbArray[i][1];
+
+    // color math, yo
+    var rgbValue = (x * 16) + y;
+
+    rgbOutput.push(rgbValue);
+  }
+
+  // put the answer in the div
+  $('.js-hex-output').html(
+    rgbOutput.join(",")
+  );
+}
 
 function validateHex(value) {
   // Hex value must be 6 characters
@@ -50,11 +90,20 @@ function validateHex(value) {
 }
 
 $ ( document ).ready(function() {
-  $('.js-hex-rgb-form').on('submit', function() {
+  $rgbToHexButton = $('.js-rgb-to-hex');
+  $hexToRGBButton = $('.js-hex-to-rgb');
+
+  $rgbToHexButton.on('click', function() {
     var $red      = $('.js-red-input').val();
     var $green    = $('.js-green-input').val();
     var $blue     = $('.js-blue-input').val();
 
     rgbToHex($red, $green, $blue);
   });
+
+  $hexToRGBButton.on('click', function() {
+    var $hexValue = $('.js-hex-input').val();
+
+    hexToRGB($hexValue);
+  })
 });
