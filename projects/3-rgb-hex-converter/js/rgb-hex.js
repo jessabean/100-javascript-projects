@@ -46,6 +46,8 @@ function hexToRGB(hex) {
   for ( var i=0; i < hexArray.length; i++) {
     var character = hexArray[i].toUpperCase();
     var code = jQuery.inArray(character, index);
+
+    // TO DO: is it clear that now we are dealing with numbers instead of strings?
     rgb.push(code);
   }
 
