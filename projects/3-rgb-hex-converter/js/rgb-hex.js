@@ -34,7 +34,7 @@ function hexToRGB(hex) {
   event.preventDefault();
 
   // set up the decoder ring
-  var index = [0,1,2,3,4,5,6,7,8,9,"A","B","C","D","E","F"];
+  var index = ["0","1","2","3","4","5","6","7","8","9","A","B","C","D","E","F"];
 
   // put each character of the hex argument into the array
   var hexArray = (hex).toString().split("");
