@@ -48,6 +48,16 @@ var data={ "notes": [
     "title": "The Getting of Wisdom",
     "author": "Harry Handel Richardson",
     "quote": "&ldquo;I say, M.P., if everybody told stories, and everybody knew everybody else was telling them, then truth woudln't be any good at all, would it? If nobody used it?&rdquo;"
+  },
+  {
+    "title": "Inspector Singh Investigates: A Most Peculiar Malaysian Murder",
+    "author": "Shamini Flint",
+    "quote": "Singaporeans were always adding to the list of reasons each one kept to hand, in case they met a Malaysian, of why it was so much better on the island than the peninsula. They ranged from law and order to cleanliness, from clean government to good schools, and always ended on the strength of the Singaporean economy. But in the end, the Malaysian would nod as if to agree to the points made&mdash;and then shrug to indicate that they probably wouldn’t trade passports, not really. And if pressed for a reason they would fall back on that old chestnut which somehow seemed to capture everything that was wrong about Singapore – but your government bans chewing gum."
+  },
+  {
+    "title": "Henry VI, Part 1",
+    "author": "William Shakespeare",
+    "quote": "O, negligent and heedless discipline!<br />How are we park'd and bounded in a pale,<br />A little herd of England's timorous deer,<br />Mazed with a yelping kennel of French curs!<br />If we be English deer, be then in blood;<br />Not rascal-like, to fall down with a pinch,<br />But rather, moody-mad and desperate stags,<br />Turn on the bloody hounds with heads of steel<br/>And make the cowards stand aloof at bay:<br />Sell every man his life as dear as mine,<br />And they shall find dear deer of us, my friends.<br />God and Saint George, Talbot and England's right<br />Prosper our colors in this dangerous fight!"
   }
  ]
 };
