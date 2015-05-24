@@ -19,18 +19,37 @@ function celsiusToFahrenheit(value) {
 }
 
 $ ( document ).ready(function() {
-  $inputFahrenheit = $('.js-input-fahrenheit');
-  $inputCelsius = $('.js-input-celsius');
+  $inputFahrenheit  = $('.js-input-fahrenheit');
+  $inputCelsius     = $('.js-input-celsius');
+  $errorsDiv        = $('.js-errors');
 
   $inputFahrenheit.on('blur', function() {
     var $fahrenheitValue = $inputFahrenheit.val();
 
-    fahrenheitToCelsius($fahrenheitValue);
+    if ($fahrenheitValue == '') {
+      $fahrenheitValue = 0;
+    }
+    
+    if ($.isNumeric($fahrenheitValue)) {
+      fahrenheitToCelsius($fahrenheitValue);
+      $errorsDiv.html("");
+    } else {
+      $errorsDiv.html("Sorry, I can only convert numbers to Celsius.");
+    };
   });
 
   $inputCelsius.on('blur', function() {
     var $celsiusValue = $inputCelsius.val();
 
-    celsiusToFahrenheit($celsiusValue);
+    if ($celsiusValue == '') {
+      $celsiusValue = 0;
+    }
+
+    if ($.isNumeric($celsiusValue)) {
+      celsiusToFahrenheit($celsiusValue);
+      $errorsDiv.html("");
+    } else {
+      $errorsDiv.html("Sorry, I can only convert numbers to Fahrenheit.");
+    };
   });
 });
