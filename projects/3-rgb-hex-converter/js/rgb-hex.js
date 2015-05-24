@@ -52,10 +52,10 @@ function hexToRGB(hex) {
   }
 
   // okay let's actually do the math now
-  convertToHex(rgb);
+  convertToRGB(rgb);
 };
 
-function convertToHex(array) {
+function convertToRGB(array) {
 
   // split out every 2 characters in the array
   var R = array.splice(0, 2);
