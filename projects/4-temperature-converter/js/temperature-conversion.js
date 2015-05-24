@@ -1,21 +1,9 @@
 function fahrenheitToCelsius(value) {
-  // Fahrenheit to Celsius math
-  var celsiusConversionFormula = (value - 32) * 5/9;
-
-  // limit to one decimal place
-  var celsiusOutput = (celsiusConversionFormula).toFixed(1);
-
-  $('.js-input-celsius').val(celsiusOutput);
+  return (value - 32) * 5/9;
 };
 
 function celsiusToFahrenheit(value) {
-  // Celsius to Fahrenheit math
-  var fahrenheitConversionFormula = (value * (9/5)) + 32;
-
-  // limit to one decimal place
-  var fahrenheitOutput = (fahrenheitConversionFormula).toFixed(1);
-
-  $('.js-input-fahrenheit').val(fahrenheitOutput);
+  return (value * (9/5)) + 32;
 }
 
 $ ( document ).ready(function() {
@@ -35,10 +23,12 @@ $ ( document ).ready(function() {
     if ( $.isNumeric(value) ) {
 
       if ( type == 'fahrenheit' ) {
-        fahrenheitToCelsius(value);
+        var output = fahrenheitToCelsius(value);
+        $('.js-input-celsius').val(output.toFixed(1));
       }
       else {
-        celsiusToFahrenheit(value);        
+        var output = celsiusToFahrenheit(value);       
+        $('.js-input-fahrenheit').val(output.toFixed(1));
       };
 
       $errorsDiv.addClass('is-hidden');
