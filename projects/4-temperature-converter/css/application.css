@@ -48,3 +48,14 @@ label {
 .field-group + .field-group {
   margin-left: 20px;
 }
+
+.errors {
+  color: #B2316D;
+  margin-top: 1.5rem;
+}
+
+.is-hidden {
+  height: 0;
+  opacity: 0;
+  visibility: hidden;
+}
