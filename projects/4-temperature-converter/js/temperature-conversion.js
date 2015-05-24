@@ -37,7 +37,7 @@ $ ( document ).ready(function() {
     } else {
       
       $errorsDiv.removeClass('is-hidden');
-      $errorsDiv.html("Sorry, I can only convert numbers from " + type);
+      $errorsDiv.html("Sorry, I can only convert numbers");
     
     };
   });
