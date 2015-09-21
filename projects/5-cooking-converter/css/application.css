@@ -1,0 +1,88 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 100%;
+}
+
+.page-header {
+  background: #FF7C73;
+  color: white;
+}
+
+.page-header,
+.page-footer {
+  padding: 1rem;  
+  text-align: center;
+}
+
+.page-header h1 {
+  margin: 0;
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+.page-content {
+  padding: 2rem 0;
+}
+
+.cu-form-wrapper {
+  width: 350px;
+  margin: 0 auto;
+}
+
+.cu-field-group {
+  background: #737E88;
+  padding: 1rem;
+  display: flex;
+}
+
+.cu-field-select {
+  flex: 0 0 auto;
+}
+
+.cu-field-buttons {
+  padding-top: 1rem;
+  text-align: center;
+}
+
+.cu-field-group + .cu-field-group {
+  border-top: 1px solid #9ea6ad;
+}
+
+.cu-input {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  background: transparent;
+  color: white;
+  border: none;
+  box-shadow: none;
+  text-align: right;
+  padding-right: 1rem;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.cu-button {
+  background: #ddd;
+  border: 1px solid #999;
+  padding: 0.5rem 1rem;
+}
+
+.cu-button--submit {
+  background: #7AAABA;
+  border-radius: 4px;
+  border: 1px solid #558ea0;
+  color: white;
+}
+
+.cu-is-hidden {
+  position: absolute; 
+  overflow: hidden; 
+  clip: rect(0 0 0 0); 
+  height: 1px; 
+  width: 1px; 
+  margin: -1px; 
+  padding: 0; 
+  border: 0; 
+}
