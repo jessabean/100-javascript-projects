@@ -83,13 +83,12 @@ var measurementsTable = {
 
 var convertUnits = function() {
   var value = document.getElementById("cu-input-amount").value;
-  var answer = tbspToto_teaspoons(value);
+  var fromUnit = document.getElementById("cu-input-from").value;
+  var toUnit = document.getElementById("cu-input-to").value;
+  var answer = measurementsTable[fromUnit]["to_" + toUnit](value);
+
   alert(answer);
   return false;
-};
-
-var tbspToto_teaspoons = function(val) {
-  return val * 3;
 };
 
 window.onload = function() {
