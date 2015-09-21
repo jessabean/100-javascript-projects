@@ -20,3 +20,16 @@ window.onload = function() {
   };
 
 };
+
+var convertUnits = function() {
+  var value = document.getElementById("cu-input-amount").value;
+  var answer = tbspToTsp(value);
+  alert(answer);
+  return false;
+};
+
+var tbspToTsp = function(val) {
+  return val * 3;
+};
+
+window.onsubmit = convertUnits;
