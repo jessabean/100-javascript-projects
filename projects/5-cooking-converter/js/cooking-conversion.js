@@ -81,17 +81,21 @@ var measurementsTable = {
   }
 };
 
-var convertUnits = function() {
-  var value = document.getElementById("cu-input-amount").value;
-  var fromUnit = document.getElementById("cu-input-from").value;
-  var toUnit = document.getElementById("cu-input-to").value;
-  var answer = measurementsTable[fromUnit]["to_" + toUnit](value);
+var convertUnits = function(event) {
+  var input = event.target;
+
+  var value = input.value;
+  var select = input.parentNode.nextElementSibling.children[0];
+  var base = select.options[select.selectedIndex].text;
+  var target = input.getAttribute("data-target");
+  var toUnit = document.getElementById(target).value;
+
+  var answer = measurementsTable[base]["to_" + toUnit](value);
 
   alert(answer);
-  return false;
 };
 
-window.onload = function() {
+var populateSelect = function() {
   var select = document.getElementsByClassName("js-cu-units");
   var options = [
     "tablespoons",
@@ -111,7 +115,8 @@ window.onload = function() {
       select[i].appendChild(opt);
     };
   };
-
 };
 
-window.onsubmit = convertUnits;
+window.onload = function() {
+  populateSelect();
+};

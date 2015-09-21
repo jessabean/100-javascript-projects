@@ -33,7 +33,7 @@
       <form id="cu-form" class="cu-form">
         <div class="cu-field-group">
           <div class="cu-field">
-            <input type="text" id="cu-input-amount" class="cu-input" />
+            <input type="text" id="cu-input-amount" class="cu-input" value="1" oninput="convertUnits(event)" data-target="cu-input-to" />
           </div>
           <div class="cu-field cu-field-select">
             <select id="cu-input-from" class="js-cu-units cu-select"></select>
@@ -41,7 +41,7 @@
         </div>
         <div class="cu-field-group">
           <div class="cu-field">
-            <input type="text" id="cu-input-amount" class="cu-input" />
+            <input type="text" id="cu-input-amount" class="cu-input" value="1" oninput="convertUnits(event)" data-target="cu-input-from" />
           </div>
           <div class="cu-field cu-field-select">
             <select id="cu-input-to" class="js-cu-units cu-select"></select>
