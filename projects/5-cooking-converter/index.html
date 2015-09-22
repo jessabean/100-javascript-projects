@@ -33,22 +33,19 @@
       <form id="cu-form" class="cu-form">
         <div class="cu-field-group">
           <div class="cu-field">
-            <input type="text" id="cu-input-amount" class="cu-input" value="1" oninput="convertUnits(event)" data-target="cu-input-to" />
+            <input type="text" id="cu-input-1" class="cu-input" value="1" oninput="convertUnits(event)" data-unit="cu-select-1" data-target="cu-input-2" data-target-select="cu-select-2" />
           </div>
           <div class="cu-field cu-field-select">
-            <select id="cu-input-from" class="js-cu-units cu-select"></select>
+            <select id="cu-select-1" class="js-cu-units cu-select"></select>
           </div>
         </div>
         <div class="cu-field-group">
           <div class="cu-field">
-            <input type="text" id="cu-input-amount" class="cu-input" value="1" oninput="convertUnits(event)" data-target="cu-input-from" />
+            <input type="text" id="cu-input-2" class="cu-input" value="1" oninput="convertUnits(event)" data-unit="cu-select-2" data-target="cu-input-1" data-target-select="cu-select-1" />
           </div>
           <div class="cu-field cu-field-select">
-            <select id="cu-input-to" class="js-cu-units cu-select"></select>
+            <select id="cu-select-2" class="js-cu-units cu-select"></select>
           </div>
-        </div>
-        <div class="cu-field-buttons">
-          <button type="submit" class="cu-button cu-button--submit">Convert</button>
         </div>
       </form>
     </div>

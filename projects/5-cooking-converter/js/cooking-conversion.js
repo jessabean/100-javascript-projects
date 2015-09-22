@@ -85,14 +85,15 @@ var convertUnits = function(event) {
   var input = event.target;
 
   var value = input.value;
-  var select = input.parentNode.nextElementSibling.children[0];
-  var base = select.options[select.selectedIndex].text;
-  var target = input.getAttribute("data-target");
-  var toUnit = document.getElementById(target).value;
+  var baseSelect = input.getAttribute("data-unit");
+  var fromUnit = document.getElementById(baseSelect).value;
+  var targetSelect = input.getAttribute("data-target-select");
+  var toUnit = document.getElementById(targetSelect).value;
+  var targetInput = input.getAttribute("data-target");
 
-  var answer = measurementsTable[base]["to_" + toUnit](value);
+  var answer = measurementsTable[fromUnit]["to_" + toUnit](value);
 
-  alert(answer);
+  document.getElementById(targetInput).value = answer;
 };
 
 var populateSelect = function() {
