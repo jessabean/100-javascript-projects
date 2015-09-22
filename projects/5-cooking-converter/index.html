@@ -33,18 +33,18 @@
       <form id="cu-form" class="cu-form">
         <div class="cu-field-group">
           <div class="cu-field">
-            <input type="text" id="cu-input-1" class="cu-input" value="1" oninput="convertUnits(event)" data-unit="cu-select-1" data-target="cu-input-2" data-target-select="cu-select-2" />
+            <input type="text" id="cu-input-1" class="cu-input" value="1" oninput="changeAmount(event)" data-unit="cu-select-1" data-target="cu-input-2" data-target-select="cu-select-2" />
           </div>
           <div class="cu-field cu-field-select">
-            <select id="cu-select-1" class="js-cu-units cu-select"></select>
+            <select id="cu-select-1" class="js-cu-units cu-select" data-input="cu-input-1" onchange="changeUnit(event)"></select>
           </div>
         </div>
         <div class="cu-field-group">
           <div class="cu-field">
-            <input type="text" id="cu-input-2" class="cu-input" value="1" oninput="convertUnits(event)" data-unit="cu-select-2" data-target="cu-input-1" data-target-select="cu-select-1" />
+            <input type="text" id="cu-input-2" class="cu-input" value="1" oninput="changeAmount(event)" data-unit="cu-select-2" data-target="cu-input-1" data-target-select="cu-select-1" />
           </div>
           <div class="cu-field cu-field-select">
-            <select id="cu-select-2" class="js-cu-units cu-select"></select>
+            <select id="cu-select-2" class="js-cu-units cu-select" data-input="cu-input-2" onchange="changeUnit(event)"></select>
           </div>
         </div>
       </form>

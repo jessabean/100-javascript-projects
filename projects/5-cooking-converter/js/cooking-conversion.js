@@ -81,17 +81,24 @@ var measurementsTable = {
   }
 };
 
-var convertUnits = function(event) {
-  var input = event.target;
+var changeAmount = function(event) {
+  convertUnits(event.target);
+};
 
-  var value = input.value;
-  var baseSelect = input.getAttribute("data-unit");
-  var fromUnit = document.getElementById(baseSelect).value;
-  var targetSelect = input.getAttribute("data-target-select");
-  var toUnit = document.getElementById(targetSelect).value;
-  var targetInput = input.getAttribute("data-target");
+var changeUnit = function(event) {
+  var input = document.getElementById(event.target.getAttribute("data-input"));
+  convertUnits(input);
+};
 
-  var answer = measurementsTable[fromUnit]["to_" + toUnit](value);
+var convertUnits = function(input) {
+  var value           = input.value;
+  var baseSelect      = input.getAttribute("data-unit");
+  var fromUnit        = document.getElementById(baseSelect).value;
+  var targetSelect    = input.getAttribute("data-target-select");
+  var toUnit          = document.getElementById(targetSelect).value;
+  var targetInput     = input.getAttribute("data-target");
+
+  var answer          = measurementsTable[fromUnit]["to_" + toUnit](value);
 
   document.getElementById(targetInput).value = answer;
 };
