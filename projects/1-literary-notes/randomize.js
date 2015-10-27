@@ -72,13 +72,7 @@ function randomize() {
   $('.quote-author').html(item.author);
 }
 
-function getQuote() {
-  var $button = $('.next')
-
-  $button.on('click', randomize);
-}
-
 $(document).ready(function() {
   randomize();
-  getQuote();
+  $('.next').on('click', randomize);
 });
