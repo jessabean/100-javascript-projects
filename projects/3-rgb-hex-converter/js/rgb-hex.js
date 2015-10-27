@@ -91,7 +91,7 @@ function validateHex(value) {
   // Hex value must only contain characters contained in the array
 }
 
-$ ( document ).ready(function() {
+jQuery( document ).ready(function($) {
   $rgbToHexButton = $('.js-rgb-to-hex');
   $hexToRGBButton = $('.js-hex-to-rgb');
 
