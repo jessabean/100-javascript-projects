@@ -86,7 +86,7 @@ var changeAmount = function(event) {
 };
 
 var changeUnit = function(event) {
-  var input = document.getElementById(event.target.getAttribute("data-input"));
+  var input = document.getElementById("cu-input-1");
   convertUnits(input);
 };
 
