@@ -5,10 +5,12 @@ var newToDo   = document.getElementById('todo-add-new');
 var addToDo = function() {
   var txt       = document.createTextNode(newToDo.value);
   var item      = document.createElement("li");
-  
-  item.appendChild(txt);
-  toDoList.appendChild(item);
-  newToDo.value = "";
+
+  if(newToDo.value) {
+    item.appendChild(txt);
+    toDoList.appendChild(item);
+    newToDo.value = "";
+  };
 };
 
 

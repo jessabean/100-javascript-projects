@@ -1,6 +1,6 @@
 * ~~Add new to do items from input to list by pressing button~~
 * ~~Add new to do items from input to list by pressing Enter~~
-* Only add new to do items if there is a value in the input field
+* ~~Only add new to do items if there is a value in the input field~~
 * ~~Clear the text in the input field after adding to do item~~
 * Remove individual to do items from list
 * Edit individual to to items
