@@ -14,8 +14,16 @@ var addToDo = function() {
 document.getElementById('btn-submit').addEventListener(
   'click', 
   function(event){
-    event.stopPropagation;
+    event.preventDefault();
     addToDo();
   },
   false
 );
+
+newToDo.onkeydown = function(event) {
+  if(event.keyCode == 13) {
+    event.preventDefault();
+    addToDo();
+    return false;
+  };
+};
