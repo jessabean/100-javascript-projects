@@ -8,6 +8,7 @@ var addToDo = function() {
   
   item.appendChild(txt);
   toDoList.appendChild(item);
+  newToDo.value = "";
 };
 
 
