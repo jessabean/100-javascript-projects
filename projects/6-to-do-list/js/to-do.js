@@ -5,9 +5,11 @@ var newToDo   = document.getElementById('todo-add-new');
 var addToDo = function() {
   var txt       = document.createTextNode(newToDo.value);
   var item      = document.createElement("li");
+  var count     = toDoList.children.length;
 
   if(newToDo.value) {
     item.appendChild(txt);
+    item.id = "todo-item-" + (count + 1);
     toDoList.appendChild(item);
     newToDo.value = "";
   };
