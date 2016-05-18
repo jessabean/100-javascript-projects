@@ -28,7 +28,11 @@ document.getElementById('btn-submit').addEventListener(
   'click',
   function(event){
     event.preventDefault();
-    addToDo();
+    if(!newToDo.value) {
+      document.getElementById('error').innerHTML = "Please enter a value!";
+    } else {
+      addToDo();
+    }
   },
   false
 );
@@ -36,7 +40,13 @@ document.getElementById('btn-submit').addEventListener(
 newToDo.onkeydown = function(event) {
   if(event.keyCode == 13) {
     event.preventDefault();
-    addToDo();
+
+    if(!newToDo.value) {
+      document.getElementById('error').innerHTML("Please enter a value!");
+    } else {
+      addToDo();
+    }
+
     return false;
   }
 };
