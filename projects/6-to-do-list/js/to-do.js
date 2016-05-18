@@ -2,17 +2,15 @@ var form      = document.getElementById('todo-form');
 var toDoList  = document.getElementById('todo-items');
 var newToDo   = document.getElementById('todo-add-new');
 
-var addToDo = function() {
-  var txt       = document.createTextNode(newToDo.value);
-  var item      = document.createElement("li");
-  var count     = toDoList.children.length;
+var toDoArray = [];
 
-  if(newToDo.value) {
-    item.appendChild(txt);
-    item.id = "todo-item-" + (count + 1);
-    toDoList.appendChild(item);
-    newToDo.value = "";
-  };
+var addToDo = function() {
+  var txt = newToDo.value;
+  toDoArray.push(txt);
+
+  var items = '<li>' + toDoArray.join('</li><li>') + '</li>';
+  toDoList.innerHTML = items;
+  newToDo.value = '';
 };
 
 
@@ -30,5 +28,5 @@ newToDo.onkeydown = function(event) {
     event.preventDefault();
     addToDo();
     return false;
-  };
+  }
 };
