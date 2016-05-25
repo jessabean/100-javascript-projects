@@ -45,7 +45,7 @@ newToDo.onkeydown = function(event) {
     event.preventDefault();
 
     if(!newToDo.value) {
-      document.getElementById('error').innerHTML("Please enter a value!");
+      document.getElementById('error').innerHTML = "Please enter a value!";
     } else {
       addToDo();
     }
