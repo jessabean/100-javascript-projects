@@ -1,6 +1,7 @@
 var form      = document.getElementById('todo-form');
 var toDoList  = document.getElementById('todo-items');
 var newToDo   = document.getElementById('todo-add-new');
+var toDos     = document.querySelectorAll('li.todo__item');
 
 var addToDo = function() {
   var txt = newToDo.value;
@@ -13,19 +14,15 @@ var addToDo = function() {
   var contents = toDoList.innerHTML;
   localStorage.setItem('contents', contents);
 
-  var toDos = document.querySelectorAll('li.todo__item');
-
-  var completeToDo = function() {
-    this.classList.toggle("todo__item--complete");
-    contents = toDoList.innerHTML;
-    localStorage.setItem('contents', contents);
-  };
-
-  for(var i = 0; i < toDos.length; i++) {
-    toDos[i].addEventListener('click', completeToDo, false);
-  }
+  toDoHandlers();
 
   return false;
+};
+
+var completeToDo = function() {
+  this.classList.toggle("todo__item--complete");
+  contents = toDoList.innerHTML;
+  localStorage.setItem('contents', contents);
 };
 
 
@@ -58,4 +55,16 @@ newToDo.onkeydown = function(event) {
 
 if(localStorage.getItem('contents')) {
   toDoList.innerHTML = localStorage.getItem('contents');
+}
+
+var toDoHandlers = function() {
+  var toDos = document.querySelectorAll('li.todo__item');
+
+  for(var i = 0; i < toDos.length; i++) {
+    toDos[i].addEventListener('click', completeToDo, false);
+  }
+};
+
+window.onload = function(){
+  toDoHandlers();
 }
