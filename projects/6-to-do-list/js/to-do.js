@@ -1,18 +1,18 @@
 "use strict()";
 
-var toDoList  = document.getElementById('todo-items');
-var newToDo   = document.getElementById('todo-add-new');
+var list      = document.getElementById('todo-items');
+var itemInput = document.getElementById('todo-add-new');
 
 var addToDo = function() {
-  var txt = newToDo.value;
+  var text = itemInput.value;
   var item = document.createElement("li");
-  item.innerHTML = txt;
+  item.innerHTML = text;
   item.classList.add("todo__item");
-  toDoList.appendChild(item);
-  newToDo.value = '';
+  list.appendChild(item);
+  itemInput.value = '';
 
-  var contents = toDoList.innerHTML;
-  localStorage.setItem('contents', contents);
+  var toDoItems = list.innerHTML;
+  localStorage.setItem('toDoItems', toDoItems);
 
   toDoHandlers();
 
@@ -23,8 +23,8 @@ var completeToDo = function(event) {
   var toDo = event.target;
   if (toDo && toDo.matches("li.todo__item")) {
     toDo.classList.toggle("todo__item--complete");
-    var contents = toDoList.innerHTML;
-    localStorage.setItem('contents', contents);
+    var toDoItems = list.innerHTML;
+    localStorage.setItem('toDoItems', toDoItems);
   }
 };
 
@@ -33,7 +33,7 @@ document.getElementById('btn-submit').addEventListener(
   'click',
   function(event){
     event.preventDefault();
-    if(!newToDo.value) {
+    if(!itemInput.value) {
       document.getElementById('error').innerHTML = "Please enter a value!";
     } else {
       addToDo();
@@ -42,11 +42,11 @@ document.getElementById('btn-submit').addEventListener(
   false
 );
 
-newToDo.onkeydown = function(event) {
+itemInput.onkeydown = function(event) {
   if(event.keyCode == 13) {
     event.preventDefault();
 
-    if(!newToDo.value) {
+    if(!itemInput.value) {
       document.getElementById('error').innerHTML = "Please enter a value!";
     } else {
       addToDo();
@@ -56,12 +56,12 @@ newToDo.onkeydown = function(event) {
   }
 };
 
-if(localStorage.getItem('contents')) {
-  toDoList.innerHTML = localStorage.getItem('contents');
+if(localStorage.getItem('toDoItems')) {
+  list.innerHTML = localStorage.getItem('toDoItems');
 }
 
 var toDoHandlers = function() {
-  toDoList.addEventListener('click', completeToDo, false);
+  list.addEventListener('click', completeToDo, false);
 };
 
 window.onload = function(){
