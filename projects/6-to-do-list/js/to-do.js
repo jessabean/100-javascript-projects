@@ -17,6 +17,8 @@ var addToDo = function() {
 
   var completeToDo = function() {
     this.classList.toggle("todo__item--complete");
+    contents = toDoList.innerHTML;
+    localStorage.setItem('contents', contents);
   };
 
   for(var i = 0; i < toDos.length; i++) {
