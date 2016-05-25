@@ -2,15 +2,16 @@ var form      = document.getElementById('todo-form');
 var toDoList  = document.getElementById('todo-items');
 var newToDo   = document.getElementById('todo-add-new');
 
-var toDoArray = [];
-
 var addToDo = function() {
   var txt = newToDo.value;
-  toDoArray.push(txt);
-
-  var items = '<li class="todo__item">' + toDoArray.join('</li><li class="todo__item">') + '</li>';
-  toDoList.innerHTML = items;
+  var item = document.createElement("li");
+  item.innerHTML = txt;
+  item.classList.add("todo__item");
+  toDoList.appendChild(item);
   newToDo.value = '';
+
+  var contents = toDoList.innerHTML;
+  localStorage.setItem('contents', contents);
 
   var toDos = document.querySelectorAll('li.todo__item');
 
@@ -21,6 +22,8 @@ var addToDo = function() {
   for(var i = 0; i < toDos.length; i++) {
     toDos[i].addEventListener('click', completeToDo, false);
   }
+
+  return false;
 };
 
 
@@ -50,3 +53,7 @@ newToDo.onkeydown = function(event) {
     return false;
   }
 };
+
+if(localStorage.getItem('contents')) {
+  toDoList.innerHTML = localStorage.getItem('contents');
+}
