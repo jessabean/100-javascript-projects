@@ -28,30 +28,21 @@ var completeToDo = function(event) {
   }
 };
 
+var validateToDo = function(event) {
+  event.preventDefault();
+  if(!itemInput.value) {
+    document.getElementById('error').innerHTML = "Please enter a value!";
+  } else {
+    addToDo();
+  }
+};
 
-document.getElementById('btn-submit').addEventListener(
-  'click',
-  function(event){
-    event.preventDefault();
-    if(!itemInput.value) {
-      document.getElementById('error').innerHTML = "Please enter a value!";
-    } else {
-      addToDo();
-    }
-  },
-  false
-);
+
+document.getElementById('btn-submit').addEventListener('click', validateToDo, false);
 
 itemInput.onkeydown = function(event) {
   if(event.keyCode == 13) {
-    event.preventDefault();
-
-    if(!itemInput.value) {
-      document.getElementById('error').innerHTML = "Please enter a value!";
-    } else {
-      addToDo();
-    }
-
+    validateToDo(event);
     return false;
   }
 };
