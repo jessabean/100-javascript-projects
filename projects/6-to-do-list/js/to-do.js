@@ -1,4 +1,5 @@
-var form      = document.getElementById('todo-form');
+"use strict()";
+
 var toDoList  = document.getElementById('todo-items');
 var newToDo   = document.getElementById('todo-add-new');
 
@@ -22,7 +23,7 @@ var completeToDo = function(event) {
   var toDo = event.target;
   if (toDo && toDo.matches("li.todo__item")) {
     toDo.classList.toggle("todo__item--complete");
-    contents = toDoList.innerHTML;
+    var contents = toDoList.innerHTML;
     localStorage.setItem('contents', contents);
   }
 };
