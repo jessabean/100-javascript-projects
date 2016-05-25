@@ -40,6 +40,7 @@ a {
   cursor: pointer;
   padding: 1rem;
   background: #F4F4F4;
+  position: relative;
 }
 
 .todo__item + .todo__item {
@@ -48,6 +49,22 @@ a {
 
 .todo__item--complete {
   text-decoration: line-through;
+  font-style: italic;
+  color: rgba(0,0,0,0.5);
+}
+
+.todo__item--complete::before {
+  content: "";
+  background-image: url("../img/check.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 12px;
+  height: 12px;
+  display: inline-block;
+  vertical-align: middle;
+  position:relative;
+  top:-.1em;
+  left: -0.25em;
 }
 
 .todo-input {
