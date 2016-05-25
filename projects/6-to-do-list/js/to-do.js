@@ -37,6 +37,14 @@ var validateToDo = function(event) {
   }
 };
 
+var clearToDos = function(event) {
+  event.preventDefault();
+  window.localStorage.clear();
+  location.reload();
+  return false;
+};
+
+document.getElementById('clear-todos').addEventListener('click', clearToDos, false);
 
 document.getElementById('btn-submit').addEventListener('click', validateToDo, false);
 
