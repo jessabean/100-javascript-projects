@@ -12,32 +12,41 @@
   <meta name="keywords" content="" />
 
   <meta name="viewport" content="width=device-width">
-  <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,900,500' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="css/normalize.css" type="text/css" media="all" />
+  <link href="https://npmcdn.com/basscss@8.0.1/css/basscss.min.css" rel="stylesheet">
 
   <link rel="stylesheet" href="css/application.css" type="text/css" media="all" />
 
 </head>
 
-<body>
-  <header role="banner" id="page_header" class="page-header">
+<body class="flex flex-column">
+  <header role="banner" id="page_header" class="page-header pt4 pb2 sm-p2">
     <h1>Too Doo List</h1>
   </header>
 
-  <div id="main" role="main" class="page-content">
-    <div class="todo-form-wrapper">
-      <form id="todo-form" class="todo-form">
-        <div id="error"></div>
-        <input type="text" id="todo-add-new" class="todo-input" placeholder="Add item" />
-        <button id="btn-submit" type="submit">Add to do</button>
-      </form>
-      <ul id="todo-items" class="todo-list"></ul>
-      <a href="#" id="clear-todos">Clear my too doo list</a>
+  <div id="main" role="main" class="page-content clearfix">
+    <div class="container sm-col-8 md-col-6 mx-auto p2">
+      <div class="container__header">
+        <form id="todo-form" class="todo-form">
+          <div id="error" class="container--error"></div>
+          <div class="flex">
+            <input type="text" id="todo-add-new" class="todo-input p1 flex-auto" placeholder="Add item" />
+            <button id="btn-submit" type="submit" class="btn btn--submit">Add to do</button>
+            </div>
+        </form>
+      </div>
+      <div class="container__body">
+        <ul id="todo-items" class="todo-list list-reset"></ul>
+      </div>
+      <div class="container__footer">
+        <a href="#" id="clear-todos">Clear my too doo list</a>
+      </div>
     </div>
   </div>
 
-  <footer role="contentinfo" id="page_footer" class="page-footer">
+  <footer role="contentinfo" id="page_footer" class="page-footer py3">
     Made with ambition by <a href="http://jessica-eldredge.com">jessabean</a>
   </footer>
 
