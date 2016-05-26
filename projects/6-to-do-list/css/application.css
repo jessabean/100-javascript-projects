@@ -41,6 +41,7 @@ a {
   padding: 1rem;
   background: #F4F4F4;
   position: relative;
+  display: flex;
 }
 
 .todo__item + .todo__item {
@@ -51,20 +52,6 @@ a {
   text-decoration: line-through;
   font-style: italic;
   color: rgba(0,0,0,0.5);
-}
-
-.todo__item--complete::before {
-  content: "";
-  background-image: url("../img/check.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 12px;
-  height: 12px;
-  display: inline-block;
-  vertical-align: middle;
-  position:relative;
-  top:-.1em;
-  left: -0.25em;
 }
 
 .todo-input {
@@ -82,6 +69,30 @@ a {
 
 .btn--submit {
   background: #46A3E4;
+}
+
+.btn--icon {
+  padding: 0;
+  background: transparent;
+}
+
+.todo__text {
+  flex: auto;
+}
+
+.icon {
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 12px;
+  height: 12px;
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  top: -.1em;
+}
+
+.icon--remove {
+  background-image: url("../img/close.svg");
 }
 
 .page-footer {
