@@ -8,4 +8,4 @@
 * Edit the to do list title
 * Assign due date to individual to do items
 * Edit due date on individual to do items
-* Complete to do items by clicking checkbox
+* ~~Complete to do items by clicking checkbox~~
