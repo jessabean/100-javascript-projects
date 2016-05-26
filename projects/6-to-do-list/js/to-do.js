@@ -6,7 +6,9 @@ var itemInput = document.getElementById('todo-add-new');
 var addToDo = function() {
   var text = itemInput.value;
   var item = document.createElement("li");
+  var listLength = list.children.length;
   item.innerHTML = text;
+  item.id = "too-doo_" + (listLength + 1);
   item.classList.add("todo__item");
   list.appendChild(item);
   itemInput.value = '';
