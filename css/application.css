@@ -1,0 +1,23 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 100%;
+}
+
+.page-header,
+.page-footer {
+  padding: 1rem;  
+}
+
+.page-header h1 {
+  text-transform: uppercase;
+}
+
+.project-list li {
+  margin-bottom: 0.5rem;
+}
