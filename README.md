@@ -21,6 +21,7 @@ You can view my projects [on the web](http://jessica-eldredge.com/100-days-of-ja
 4. [Fahrenheit-Celsius converter](http://jessica-eldredge.com/fahrenheit-celsius-converter/)
 5. [Cooking unit converter](http://jessica-eldredge.com/cooking-unit-converter/)
 6. [Too Doo List](http://jessica-eldredge.com/too-doo-list/)
+7. [Cool Cat Gifs](http://jessica-eldredge.com/cat-viewer/)
 
 ## Backlog of project ideas and improvements and things to learn
 
