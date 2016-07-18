@@ -25,6 +25,9 @@ You can view my projects [on the web](http://jessica-eldredge.com/100-days-of-ja
 
 ## Backlog of project ideas and improvements and things to learn
 
+- [ ] A Slackbot
+- [ ] [Tic tac toe](http://www.theodinproject.com/javascript-and-jquery/tic-tac-toe)
+- [ ] [Advent of code](http://adventofcode.com/)
 - [ ] Dropdowns
 - [ ] Build a game
 - [ ] Photo gallery
