@@ -22,6 +22,7 @@ You can view my projects [on the web](http://jessica-eldredge.com/100-days-of-ja
 5. [Cooking unit converter](http://jessica-eldredge.com/cooking-unit-converter/)
 6. [Too Doo List](http://jessica-eldredge.com/too-doo-list/)
 7. [Cool Cat Gifs](http://jessica-eldredge.com/cat-viewer/)
+8. [Secret Santa](http://jessica-eldredge.com/secret-santa-js/)
 
 ## Backlog of project ideas and improvements and things to learn
 
