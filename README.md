@@ -13,16 +13,24 @@ Inspired by Jennifer Dewalt's [180 websites in 180 days](http://jenniferdewalt.c
 
 ## The Projects
 
-You can view my projects [on the web](http://jessica-eldredge.com/100-days-of-javascript/).
+You can also view this list [on the web](http://jessica-eldredge.com/100-days-of-javascript/).
 
-1. [Literary quotes](http://jessica-eldredge.com/literary-notes/) - Randomly cycling through quotes from books I've read
-2. [Hours to decimals converter](http://jessica-eldredge.com/hours-to-decimals/) - Converting hours and minutes to decimal units
-3. [RGB-Hex converter](http://jessica-eldredge.com/rgb-hex-converter/) - Convert RGB to hex and back again
-4. [Fahrenheit-Celsius converter](http://jessica-eldredge.com/fahrenheit-celsius-converter/)
-5. [Cooking unit converter](http://jessica-eldredge.com/cooking-unit-converter/)
-6. [Too Doo List](http://jessica-eldredge.com/too-doo-list/)
-7. [Cool Cat Gifs](http://jessica-eldredge.com/cat-viewer/)
-8. [Secret Santa](http://jessica-eldredge.com/secret-santa-js/)
+1. **Literary Quotes** - Randomly cycling through quotes from books I've read
+  - [website](http://jessica-eldredge.com/literary-notes/) | [Github](https://github.com/jessabean/literary-notes)
+2. **Hours to decimals converter** - Converting hours and minutes to decimal units
+  - [website](http://jessica-eldredge.com/hours-to-decimals/) | [Github](https://github.com/jessabean/hours-to-decimals)
+3. **RGB-Hex converter** - Convert RGB to hex and back again
+  - [website](http://jessica-eldredge.com/rgb-hex-converter/) | [Github](https://github.com/jessabean/rgb-hex-converter)
+4. **Fahrenheit-Celsius converter** - Temperature conversion calculator
+  - [website](http://jessica-eldredge.com/fahrenheit-celsius-converter/) | [Github](https://github.com/jessabean/fahrenheit-celsius-converter)
+5. **Cooking unit converter** - How many teaspoons are in a quart, anyway?
+  - [website](http://jessica-eldredge.com/cooking-unit-converter/) | [Github](https://github.com/jessabean/cooking-unit-converter)
+6. **Too Doo List** - To do list app using vanilla JS and HTML5 local storage
+  - [website](http://jessica-eldredge.com/too-doo-list/) | [Github](https://github.com/jessabean/too-doo-list)
+7. **Cool Cat Gifs** - Fetches random cat gifs via the Giphy API
+  - [website](http://jessica-eldredge.com/cat-viewer/) | [Github](https://github.com/jessabean/cat-viewer)
+8. **Secret Santa** - No more drawing names from a hat! My first project to introduce JS testing with Mocha and Chai.
+  - [website](http://jessica-eldredge.com/secret-santa-js/) | [Github](https://github.com/jessabean/secret-santa-js)
 
 ## Backlog of project ideas and improvements and things to learn
 
