@@ -41,3 +41,4 @@ You can view my projects [on the web](http://jessica-eldredge.com/100-days-of-ja
 - [ ] Form submission and AJAX response
 - [ ] Form validation
 - [ ] [This list](http://www.dreamincode.net/forums/topic/78802-martyr2s-mega-project-ideas-list/)
+- [ ] [JS clock](http://exercism.io/exercises/javascript/clock)
