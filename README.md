@@ -32,7 +32,7 @@ You can also view this list [on the web](http://jessica-eldredge.com/100-days-of
 8. **Secret Santa** - No more drawing names from a hat! My first project to introduce JS testing with Mocha and Chai.
   - [website](http://jessica-eldredge.com/secret-santa-js/) | [Github](https://github.com/jessabean/secret-santa-js)
 9. **Whack-a-Penguin** - A game inspired by [Coder Projects' Pop-up Penguin](https://googlecreativelab.github.io/coder-projects/projects/pop_up_penguins/)
-  - [Github](https://github.com/jessabean/whack-a-penguin)
+  - [website](http://jessica-eldredge.com/whack-a-penguin) | [Github](https://github.com/jessabean/whack-a-penguin)
 
 ## Backlog of project ideas and improvements and things to learn
 
