@@ -4,12 +4,10 @@ Inspired by Jennifer Dewalt's [180 websites in 180 days](http://jenniferdewalt.c
 
 ## The Rules
 
-1. I will do 100 small Javascript projects.
-2. Projects may take multiple days to complete.
-3. I will not get distracted by trying to visually design my projects. The goal is to learn Javascript.
+1. I will do 100 small JavaScript projects.
+2. There's no time limit on how long an individual exercise can take.
+3. Perfect is the enemy of good. I will not be afraid of making mistakes.
 4. I will ask for help when I need it.
-5. I will try to use "vanilla JavaScript" whenever possible.
-5. I will not feel bad for using jQuery, CoffeeScript, or any other JS-related language/framework when I feel like it. 
 
 ## The Projects
 
@@ -33,12 +31,18 @@ You can also view this list [on the web](http://jessica-eldredge.com/100-days-of
   - [website](http://jessica-eldredge.com/secret-santa-js/) | [Github](https://github.com/jessabean/secret-santa-js)
 9. **Whack-a-Penguin** - A game inspired by [Coder Projects' Pop-up Penguin](https://googlecreativelab.github.io/coder-projects/projects/pop_up_penguins/)
   - [website](http://jessica-eldredge.com/whack-a-penguin) | [Github](https://github.com/jessabean/whack-a-penguin)
+10. **Pomodoro Timer** - A JS implementation of a timer for the Pomodoro Technique.
+  - [Github](https://github.com/jessabean/pomodoro-timer)
+
+## More 100 Projects
+
+- [dotsara](https://github.com/dotsara/100-projects)
+- [elyseholladay](https://github.com/elyseholladay/100-javascript-projects)
 
 ## Backlog of project ideas and improvements and things to learn
 
 - [ ] A Slackbot
 - [ ] [Tic tac toe](http://www.theodinproject.com/javascript-and-jquery/tic-tac-toe)
-- [ ] [Advent of code](http://adventofcode.com/)
 - [ ] Dropdowns
 - [ ] Build a game
 - [ ] Photo gallery
@@ -50,6 +54,14 @@ You can also view this list [on the web](http://jessica-eldredge.com/100-days-of
 - [ ] Something with React
 - [ ] Form submission and AJAX response
 - [ ] Form validation
-- [ ] [This list](http://www.dreamincode.net/forums/topic/78802-martyr2s-mega-project-ideas-list/)
 - [ ] [JS clock](http://exercism.io/exercises/javascript/clock)
 - [ ] song-a-day bot for the daily happy dance
+
+## Resources
+
+- [Women Who Code DC: JS Study Guide](https://github.com/womenwhocodedc/front-end-community/blob/master/study-guides/javascript_study_guide.md)
+- [mega project ideas list](http://www.dreamincode.net/forums/topic/78802-martyr2s-mega-project-ideas-list/)
+- [Advent of code](http://adventofcode.com/)
+- [Coder Projects](https://googlecreativelab.github.io/coder-projects/)
+- [Reddit: Daily Programmer Challenges](https://www.reddit.com/r/dailyprogrammer/wiki/challenges)
+- [Mega Project List](https://github.com/karan/Projects)
