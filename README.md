@@ -32,7 +32,7 @@ You can also view this list [on the web](http://jessica-eldredge.com/100-days-of
 9. **Whack-a-Penguin** - A game inspired by [Coder Projects' Pop-up Penguin](https://googlecreativelab.github.io/coder-projects/projects/pop_up_penguins/)
   - [website](http://jessica-eldredge.com/whack-a-penguin) | [Github](https://github.com/jessabean/whack-a-penguin)
 10. **Pomodoro Timer** - A JS implementation of a timer for the Pomodoro Technique.
-  - [Github](https://github.com/jessabean/pomodoro-timer)
+  - [website](http://jessica-eldredge.com/pomodoro-timer) | [Github](https://github.com/jessabean/pomodoro-timer)
 
 ## More 100 Projects
 
